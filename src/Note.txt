@@ -75,3 +75,7 @@ comparing the text "Jeans"
 rel xpath (chropath)- //body/main[@id='next-plp-entrypoint']/div[@id='platform_modernisation_plp']/div[@id='plp']/div[2]/div[1]/div[1]/div[1]/div[1]/h1[1]/span[1]
 
 dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
+
+--- BDD- Behaviour Driven Development- all these concept are BDD supported by Cucumber to build test cases.
+
+--- We have to build the test definition that is not available in our test suite.
