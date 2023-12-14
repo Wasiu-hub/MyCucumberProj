@@ -29,7 +29,7 @@ public class Search {
 
     @When("I enter {string} as a product type in the search box")
     public void i_enter_as_a_product_type_in_the_search_box(String string) {
-        driver.findElement(By.xpath("//input[@id='header-big-screen-search-box']")).sendKeys("Jeans");
+        driver.findElement(By.xpath("//input[@id='header-big-screen-search-box']")).sendKeys(string);
     }
 
     @When("I click on search button")
