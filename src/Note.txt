@@ -79,3 +79,5 @@ dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
 --- BDD- Behaviour Driven Development- all these concept are BDD supported by Cucumber to build test cases.
 
 --- We have to build the test definition that is not available in our test suite.
+
+--- smoke testing (one time test), regression testing (numerous testing)

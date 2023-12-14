@@ -1,5 +1,6 @@
 Feature:  Search
 
+  @Wasiu
   Scenario: Validate search behaviour based on Jeans as a product type
 
     Given I am on the next home page
@@ -27,6 +28,7 @@ Feature:  Search
     And I click on search button
     Then I should be able to see "Nike" as a result title
 
+  @Wasiu
   Scenario: Validate search behaviour based on "Reebok" as a brand
     Given I am on the next home page
     When I enter "Reebok" as a brand in the search box

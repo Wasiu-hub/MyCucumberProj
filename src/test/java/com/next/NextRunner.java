@@ -6,6 +6,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 //@CucumberOptions(features = ".", dryRun = true)
-@CucumberOptions(features = ".", dryRun = false)
+@CucumberOptions(features = ".", dryRun = false, tags = "@Wasiu")
 public class NextRunner {
 }
