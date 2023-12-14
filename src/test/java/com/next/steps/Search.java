@@ -47,4 +47,9 @@ public class Search {
         Assert.assertEquals(expectedResult, actualResult);
         driver.close();
     }
+
+    @When("I enter {string} as a brand in the search box")
+    public void i_enter_as_a_brand_in_the_search_box(String brandTitle) {
+        driver.findElement(By.xpath("//input[@id='header-big-screen-search-box']")).sendKeys(brandTitle);
+    }
 }

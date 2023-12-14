@@ -5,6 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = ".", dryRun = true)
+//@CucumberOptions(features = ".", dryRun = true)
+@CucumberOptions(features = ".", dryRun = false)
 public class NextRunner {
 }
