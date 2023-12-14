@@ -1,0 +1,42 @@
+- automation testing is better because it's faster which saves time
+- it eliminates tediousness and tiredness which increases the quality of our code
+- with automation, we can append many test cases into our test suite in large project
+- automation testing is very useful in regression testing
+
+---- Cucumber Framework ----
+
+- since POs are not technical people, the Cucumber framework helps to simplifier our test in a less technical terms for them to understand.
+
+- As mentioned previously:
+
+-In Mavin you simplify your project dependencies in Mavin configuration files that it automatically downloads. Without Mavin, you need to manually download it and attach it to your project which is time-consuming and tedious.
+
+- Selenium came with APIs which help to interact with Web Elements. Without Selenium, you will need to build the APIs with Java program.
+
+- Junit is used to run our test result, validate expected and actual result.
+
+- Selenium, to interact with Web Elements
+
+-- WebDriverManager---
+- Two things are needed to run the automation testing: the browser and the WebDriver engine.
+- the WebDriver takes the script (the codes written) and executive them on top of the web browser.
+
+- You are validating or executing the on top of the web browser
+- every browser has their own engines and versions
+
+- without the WebDriverManager, you have to pick the browser specific engine and compatibility to work with the WebDriver
+
+- WebDriverManager is an additional library added to selenium framework.
+
+---Cucumber
+- there is no support for Cucumber in selenium, so we use plugins added to our intellij to help speed up the Cucumber project.
+
+- Cucumber helps to add capabilities to our project with the help of the plugins
+
+---To add the Cucumber-based capabilities do the following:
+- IntelliJ Idea < preferences < plugins < search Gherkin & cucumber for java - these two plugins are needed. After download, the intellijIdea will start identifying the cucumber data files.
+
+-- Every Cucumber-based project is a completely different structure, and they need have three components:
+i- run-up file: contains how to run the project- run configurations
+ii- feature file: contains test cases written in Gherkin language
+iii- step definition file: has Java version
