@@ -80,4 +80,8 @@ dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
 
 --- We have to build the test definition that is not available in our test suite.
 
---- smoke testing (one time test), regression testing (numerous testing)
+--- smoke testing (checks application stability, one time test), regression testing ( details testing, numerous testing)
+
+-- Smoke- no need for complete testing, no need to execute it, the genre processes. Once app is deployed one person will be allocated to perform the smoke testing to see how the app is behaving, if it is stable and in testable condition. How is in testable condition is to check the primary genre, if it is loading, plugin is working,
+
+-- then go for detail testing- every scenario to be tested- the Regression testing- scenarios where the tags are used

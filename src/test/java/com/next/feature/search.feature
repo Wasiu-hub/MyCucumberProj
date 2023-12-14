@@ -1,6 +1,6 @@
 Feature:  Search
 
-  @Wasiu
+  @Wasiu @SmokeTest
   Scenario: Validate search behaviour based on Jeans as a product type
 
     Given I am on the next home page
@@ -22,6 +22,7 @@ Feature:  Search
     And I click on search button
     Then I should be able to see "Shoe" as a result title
 
+  @SmokeTest
   Scenario: Validate search behaviour based on "Nike" as a brand
     Given I am on the next home page
     When I enter "Nike" as a brand in the search box
