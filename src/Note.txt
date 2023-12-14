@@ -39,9 +39,15 @@
 -- Every Cucumber-based project is a completely different structure, and they need have three components:
 i- run-up file: contains how to run the project- run configurations
 ii- feature file: contains test cases written in Gherkin language (simple English)
-iii- step definition file: has Java version
+iii- step definition file: where step definitions are written with java code logic.
 
 Steps:
 create runner-up file, find feature file -- Since there is no cucumber support in Java, so feature file is a file where you will write your test cases in simple Gherkin language.
 
 - the Gherkin plugin helps intellij to identify the .feature file as a cucumber file
+
+-- inside the step definition, we have to fill the logic of interacting with web elements using the selenium framework
+
+- In cucumber, the Gherkin plugin helps to speed up the development, supports features of cucumber-based files. And Cucumber for Java plugin helps to identify the corresponding method to feature file content when each line of the file is highlighted.
+
+-- to accept the cookies, find the element (pick the locator) in the DOM tree and click on it.

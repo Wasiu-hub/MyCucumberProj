@@ -3,12 +3,25 @@ package com.next.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.time.Duration;
 
 // contains all search related step definitions
 public class Search {
 
     @Given("I am on the next home page")
     public void i_am_on_the_next_home_page() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));// this needed for safari browser
+        driver.manage().window().maximize();
+        driver.get("https://www.next.co.uk");
+        driver.findElement(By.id("onetrust-accept-btn-handler")).click();
+
     }
     @When("I enter {string} as a product type in the search box")
     public void i_enter_as_a_product_type_in_the_search_box(String string) {
