@@ -51,3 +51,15 @@ create runner-up file, find feature file -- Since there is no cucumber support i
 - In cucumber, the Gherkin plugin helps to speed up the development, supports features of cucumber-based files. And Cucumber for Java plugin helps to identify the corresponding method to feature file content when each line of the file is highlighted.
 
 -- to accept the cookies, find the element (pick the locator) in the DOM tree and click on it.
+
+-- chropath plugin (from chrome web store)- helps us to identify the locators (web elements).
+-- chropath won't work when you run your application in cognitive mode.
+
+-- remove from buffer, clear from memory
+
+----COMPARING REL XPATH IN CHROPATH WITH XPATH DOM HTML
+rel xpath- //input[@id='header-big-screen-search-box'] --- BETTER
+dom xpath- //*[@id="header-big-screen-search-box"]
+
+//tagName[att = attVal]
+1000 tags - 10 input tags
