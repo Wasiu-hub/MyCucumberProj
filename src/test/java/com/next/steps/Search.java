@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,5 +39,12 @@ public class Search {
 
     @Then("I should be able to see {string} as a result title")
     public void i_should_be_able_to_see_as_a_result_title(String string) {
+
+        String expectedResult = "\"Jeans\"";
+//        Thread.sleep(200);// needed for safari browser
+        String actualResult = driver.findElement(By.xpath("//*[@id=\"plp-results-title-container\"]/div/h1/span")).getText();
+
+        Assert.assertEquals(expectedResult, actualResult);
+        driver.close();
     }
 }
