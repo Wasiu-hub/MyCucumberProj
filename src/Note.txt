@@ -58,8 +58,13 @@ create runner-up file, find feature file -- Since there is no cucumber support i
 -- remove from buffer, clear from memory
 
 ----COMPARING REL XPATH IN CHROPATH WITH XPATH DOM HTML
-rel xpath- //input[@id='header-big-screen-search-box'] --- BETTER
+rel xpath (chropath)- //input[@id='header-big-screen-search-box'] --- BETTER
 dom xpath- //*[@id="header-big-screen-search-box"]
 
 //tagName[att = attVal]
 1000 tags - 10 input tags
+
+--- for search button ---
+rel xpath (chropath)- //header/div[1]/nav[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/form[1]/button[1]/img[1]
+
+dom xpath- //*[@id="header-search-form"]/button/img - BETTER

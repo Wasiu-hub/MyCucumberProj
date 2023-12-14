@@ -33,6 +33,7 @@ public class Search {
 
     @When("I click on search button")
     public void i_click_on_search_button() {
+        driver.findElement(By.xpath("//*[@id=\"header-search-form\"]/button/img")).click();
     }
 
     @Then("I should be able to see {string} as a result title")
