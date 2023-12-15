@@ -85,3 +85,8 @@ dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
 -- Smoke- no need for complete testing, no need to execute it, the genre processes. Once app is deployed one person will be allocated to perform the smoke testing to see how the app is behaving, if it is stable and in testable condition. How is in testable condition is to check the primary genre, if it is loading, plugin is working,
 
 -- then go for detail testing- every scenario to be tested- the Regression testing- scenarios where the tags are used
+
+-----GENERATING TEST REPORTS USING CUCUMBER FRAMEWORK----
+-- there need a template to be followed depending on organizations
+== you can use plugins to generate the reports.
+-- pretty is a plugin
