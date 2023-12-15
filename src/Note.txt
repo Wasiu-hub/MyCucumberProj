@@ -90,3 +90,4 @@ dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
 -- there need a template to be followed depending on organizations
 == you can use plugins to generate the reports.
 -- pretty is a plugin
+
