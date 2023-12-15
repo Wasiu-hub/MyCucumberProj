@@ -97,3 +97,15 @@ dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
 --Scenario Outline- executing same step again and again using the differences in the scenario outline, only text data different.
 
 -- in scenario outline, all the values are delimiter with the pipe symbol
+
+-- in Cucumber, the hooks are executed before test case starts or after the test case is completed- Before and After
+
+-- test case comes from feature files
+
+-- The @Before and @After in Cucumber Hook is related to step definition file (here, the Search.js file). So there is no point putting the hooks in the Search.js file.
+
+-- The content to be in Hook are generic and should not be specific to any feature e.g setting up the browser engine because it is not specific to a function or Module, it is applicable to the whole test.
+
+-- Opening and closing of the browser are whole test case irrespective of the module.
+
+-- In Cucumber, you are not allowed to extend classes that define the Step Definition or Hooks

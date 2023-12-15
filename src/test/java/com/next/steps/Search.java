@@ -12,18 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 // contains all search related step definitions
-public class Search {
-
-    WebDriver driver;
+public class Search extends Hooks{
 
     @Given("I am on the next home page")
     public void i_am_on_the_next_home_page() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));// this needed for safari browser
-        driver.manage().window().maximize();
-        driver.get("https://www.next.co.uk");
-        driver.findElement(By.id("onetrust-accept-btn-handler")).click();
 
     }
 
@@ -45,7 +37,6 @@ public class Search {
         String actualResult = driver.findElement(By.xpath("//*[@id=\"plp-results-title-container\"]/div/h1/span")).getText();
 
         Assert.assertEquals(expectedResult, actualResult);
-        driver.close();
     }
 
     @When("I enter {string} as a brand in the search box")
