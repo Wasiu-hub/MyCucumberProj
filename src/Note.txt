@@ -90,4 +90,10 @@ dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
 -- there need a template to be followed depending on organizations
 == you can use plugins to generate the reports.
 -- pretty is a plugin
--- file path copied from content root
+
+-- Cucumber background- file path copied from content root
+-- Cucumber Background is applicable for all test cases
+
+--Scenario Outline- executing same step again and again using the differences in the scenario outline, only text data different.
+
+-- in scenario outline, all the values are delimiter with the pipe symbol

@@ -9,10 +9,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
 //      features = ".",
-        features = "src/test/java/com/next/feature/search.feature",
+        features = "src/test/java/com/next/feature/searchWithScenarioOutline.feature",
         dryRun = false,
 //      tags = "@SmokeTest",
         plugin = {"pretty", "html:reports.html"})
+
 public class NextRunner {
 
 }
