@@ -108,4 +108,7 @@ dom xpath- //*[@id="plp-results-title-container"]/div/h1/span -- BETTER
 
 -- Opening and closing of the browser are whole test case irrespective of the module.
 
--- In Cucumber, you are not allowed to extend classes that define the Step Definition or Hooks
+-- In Cucumber, you are not allowed to extend classes that define the Step Definition or Hooks- they both have annotations.
+
+-- CommonFunctions or Utils
+-- Every object has its own state - search driver has its own state, hook driver has its own state both are sync with Static Access Modifier which allows sharing of states between objects.

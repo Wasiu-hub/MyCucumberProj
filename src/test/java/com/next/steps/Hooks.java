@@ -9,9 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.security.PublicKey;
 
-public class Hooks {
-
-    public WebDriver driver;
+public class Hooks extends CommonFunctions{
 
     @Before
     public void preAction() {

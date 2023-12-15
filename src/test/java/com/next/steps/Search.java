@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 // contains all search related step definitions
-public class Search extends Hooks{
+public class Search extends CommonFunctions{
 
     @Given("I am on the next home page")
     public void i_am_on_the_next_home_page() {
